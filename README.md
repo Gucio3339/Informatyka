@@ -1,2 +1,2 @@
-# Informatyka
-Informatyka
+# Zadanie
+Zadanie
