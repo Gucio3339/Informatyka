@@ -1,5 +1,5 @@
 # <Informatyka>
-<Stasiak Aleksander> <15.02.2022>
+<Stasiak Marian Aleksander> <15.02.2022>
 
 ## Opis
 
