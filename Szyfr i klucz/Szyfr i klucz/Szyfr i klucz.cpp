@@ -1,37 +1,38 @@
 ﻿using namespace std;
-
 #include <iostream>
 
-void Szyfr_Cezara(char słowo[], int k)
+//SC - Szyfr Cezara
+
+void Szyfr_Cezara(char słowo[], int SC)
 {
-    if (k >= -26 && k <= 26)
+    if (SC >= -26 && SC <= 26)
     {
         int d = strlen(słowo);
-        if (k >= 0)
+        if (SC >= 0)
         {
             for (int i = 0; i < d; i++)
             {
-                if (słowo[i] + k <= 'z')
+                if (słowo[i] + SC <= 'z')
                 {
-                    słowo[i] += k;
+                    słowo[i] += SC;
                 }
                 else
                 {
-                    słowo[i] = słowo[i] + k - 26;
+                    słowo[i] = słowo[i] + SC - 26;
                 }
             }
         }
-        else if (k < 0)
+        else if (SC < 0)
         {
             for (int i = 0; i < d; i++)
             {
-                if (słowo[i] + k >= 'a')
+                if (słowo[i] + SC >= 'a')
                 {
-                    słowo[i] += k;
+                    słowo[i] += SC;
                 }
                 else
                 {
-                    słowo[i] = słowo[i] + k + 26;
+                    słowo[i] = słowo[i] + SC + 26;
                 }
             }
         }
